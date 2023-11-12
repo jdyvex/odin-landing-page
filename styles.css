@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-dark: #1f2937;
+  --main-light: #f9faf8;
+  --secondary: #e5e7eb;
+  --button: #3882f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: var(--main-dark);
+  color: var(--main-light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  margin: 0 250px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-container {
+  display: flex;
+  margin: 80px 250px;
+}
+
+.main-container div {
+  flex: 1;
+}
+
+.main-container img {
+  min-width: 200px;
+  overflow: hidden;
+}
+
+.left-col {
+  padding: 0 50px 0 0;
+  line-height: 1.5;
+}
+
+.left-col h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.left-col p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+.btn {
+  background-color: var(--button);
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gallery-container {
+  background: var(--main-light);
+  color: var(--main-dark);
+  text-align: center;
+  padding: 100px;
+}
+
+.gallery-container h2 {
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  color: var(--main-dark);
+}
+
+.img-container {
+  max-width: 275px;
+}
+
+.image-gallery img {
+  border: 2px solid var(--button);
+  border-radius: 20px;
+}
+
+.quote-container {
+  background-color: var(--secondary);
+  color: var(--main-dark);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 36px;
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.quote-container blockquote {
+  max-width: 60%;
+}
+
+.quote-container figcaption {
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  position: absolute;
+  bottom: 20%;
+  right: 28%;
+}
+
+.cta-container {
+  background-color: var(--main-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  background-color: var(--button);
+  margin: 75px;
+  padding: 30px 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  border-radius: 8px;
+}
+
+.cta-text p {
+  font-weight: 300;
+}
+
+.cta-btn {
+  border: 2px solid var(--main-light);
+  padding: 5px 25px;
+  font-weight: 600;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  font-weight: 300;
+}
